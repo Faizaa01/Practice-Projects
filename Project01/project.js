@@ -56,7 +56,7 @@ const handleAdd = (name,img) => {
     conv = conv+1;
     document.getElementById("total").innerText = conv;
 
-    if(conv==8){
+    if(conv>=8){
         alert("Drink Limit Exceeded");
         return;
     }
