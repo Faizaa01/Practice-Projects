@@ -1,0 +1,107 @@
+.title{
+    text-align: center;
+    margin-top: 10px;
+    color:chocolate;
+}
+.search{
+    display: flex;
+    justify-content: center;
+}
+.search-drinks{
+    width: 400px;
+    height: 50px;
+    font-size: 1rem;
+    border: 2px solid rgba(118, 52, 52, 0.712);
+    border-radius: 10px;
+}
+.search-button{
+    margin: 1px;
+    width: 70px;
+    height: 50px;
+    color: white;
+    border-radius: 10px;
+    background-color:rgba(118, 52, 52, 0.712);
+}
+.search-button:hover{
+    background-color: black;
+}
+.details{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.drinks-container{
+    max-height: none;
+    overflow-y: visible; 
+    gap: 10px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cart{
+    width: 350px;
+    padding: 10px;
+    margin-right: 50px;
+    border-radius: 10px;
+    text-align: center;
+    background-color:linen;
+    box-shadow: 4px 4px 8px gray;
+}
+.box{
+    width: 280px;
+    /* height: 470px; */
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    box-shadow: 4px 4px 8px gray;
+}
+.D-img{
+    width: 280px;
+    height: 280px;
+    padding-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.line{
+    display: flex;
+    justify-content: space-around;
+}
+.cart-add{
+    box-shadow: 2px 2px 5px lightgray;
+    padding: 10px;
+    display: flex;
+    justify-content:space-evenly;
+}
+.c-img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+.button1{
+    border-radius: 5px;
+    padding: 5px;
+    background-color:darksalmon;
+    border: none;
+}
+.button2{
+    border-radius: 5px;
+    padding: 5px;
+    background-color:darkgray;
+    border: none;
+}
+.name{
+    width: 50px;
+}
+.close{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    margin: 10px;
+}
+.no-drink{
+    display: flex;
+    justify-content: center;
+}

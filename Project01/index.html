@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h2 class="title"><i>The Cocktail Party</i></h2><br>
+    <div class="main">
+        <div class="search">
+            <input class="search-drinks" id="search-input" type="text" placeholder="  Search your drink" aria-label="default input example">
+            <button class="search-button" onclick="finddrinks()">Search</button>
+        </div>
+        <div class="details">
+            <div id="drinks-container" class="drinks-container"></div>
+
+            <div class="cart">
+                <h3>Total Cart: <span id="total">0</span></h3>
+                <div class="line">
+                <div>SL</div>
+                <div>Img </div>
+                <div>Name </div>
+            </div>
+            <hr>
+            <div class="add" id="add"></div></div>
+
+        <div class="modal fade" id="detailsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" id="modal-body"></div>
+            <button type="button" class="close btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+
+
+
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="project.js"></script>
+</body>
+</html>
