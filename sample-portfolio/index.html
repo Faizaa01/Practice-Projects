@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Bootstrap" width="50%" height="50%" class="bg-black rounded-circle">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="resumeBtn" class="btn btn-info rounded">
+                            <i class="fa-regular fa-circle-down"></i> Resume
+                        </button>
+                        <a id="downloadLink" href="img/resume.jpg" download class="d-none"></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <banner class="head bg-secondary p-5 d-flex flex-column flex-md-row align-items-center">
+        <img src="img/pic.svg" class="pic img-fluid order-0 order-md-1 mb-5 mb-md-0 ms-md-3" alt="...">
+        <div class="text-content text-white order-1 order-md-0 w-100 w-md-75">
+            <h1 class="intro mt-3 mt-md-5">Hi!</h1>
+            <h1>I'm Faiza Noushin Priya</h1>
+            <h5>Aspiring Software Engineer || Programmer || Future Google Engineer</h5>
+            <br>
+            <p class="about w-50 w-md-50">
+                I am currently developing my skills in programming and software development, with a focus
+                on web technologies and problem-solving. I aim to build a strong foundation for a future career in the
+                tech industry.
+            </p>
+            <div>
+                <i class="fa-brands fa-github me-3"></i>
+                <i class="fa-brands fa-linkedin me-3"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </banner>
+    <!-- portfolio -->
+    <main class="port container-fluid py-5 bg-light">
+        <h2 class="text-center py-4">Portfolio</h2>
+
+        <div class="card mb-5 mx-auto shadow" style="max-width: 1000px;">
+            <div class="row g-0 flex-column flex-md-row">
+                <div class="col-md-6">
+                    <div id="cardCarousel" class="carousel slide h-100" data-bs-ride="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/isa.png" class="d-block w-100" style="height: 400px; object-fit: cover;"
+                                    alt="First Image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/isa2.png" class="d-block w-100" style="height: 400px; object-fit: cover;"
+                                    alt="Second Image">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center p-4">
+                    <h4>
+                        Image Search App
+                        <a href="https://github.com/Faizaa01" target="_blank" class="text-dark">
+                            <i class="fa-brands fa-github ms-2"></i>
+                        </a>
+                    </h4>
+                    <p>A web-based image search tool that retrieves and displays real-time images based on user-entered
+                        keywords.
+                        It connects to an API to fetch and show dynamic results like "cat", "dog", or "space" photos.
+                        The app was built to strengthen my JavaScript and API handling skills in a clean interface.</p>
+                    <div>
+                        <span class="badge bg-secondary me-1">HTML</span>
+                        <span class="badge bg-secondary me-1">CSS</span>
+                        <span class="badge bg-secondary me-1">JavaScript</span>
+                        <span class="badge bg-secondary me-1">API</span>
+                        <span class="badge bg-secondary me-1">Bootstrap</span>
+                        <span class="badge bg-secondary">DOM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mx-auto shadow mb-5" style="max-width: 1000px;">
+            <div class="row g-0 flex-column flex-md-row">
+                <div class="col-md-6">
+                    <div id="libraryCarousel" class="carousel slide h-100" data-bs-ride="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/p1.jpg" class="d-block w-100" style="height: 400px; object-fit: cover;"
+                                    alt="Library Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/p2.jpg" class="d-block w-100" style="height: 400px; object-fit: cover;"
+                                    alt="Library Image 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#libraryCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#libraryCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center p-4">
+                    <h4>
+                        Library Management System
+                        <a href="https://github.com/Faizaa01" target="_blank" class="text-dark">
+                            <i class="fa-brands fa-github ms-2"></i>
+                        </a>
+                    </h4>
+                    <p>
+                        A Python-based system that manages book inventories, user registrations, and issue/return
+                        processes. It features both CLI and GUI (Tkinter) interfaces for admins and users, demonstrating
+                        skills in OOP, file handling, and interface design.
+                    </p>
+                    <div>
+                        <span class="badge bg-secondary me-1">Python</span>
+                        <span class="badge bg-secondary me-1">OOP</span>
+                        <span class="badge bg-secondary me-1">File Handling</span>
+                        <span class="badge bg-secondary me-1">Tkinter</span>
+                        <span class="badge bg-secondary">CLI/GUI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="p-5 bg-light">
+            <div class="container">
+                <div class="row g-4 align-items-start">
+                    <div class="col-md-6">
+                        <h3>Expertise:</h3>
+                        <p>
+                            <span class="badge bg-primary me-1">HTML</span>
+                            <span class="badge bg-primary me-1">CSS</span>
+                            <span class="badge bg-primary me-1">Bootstrap</span>
+                            <span class="badge bg-primary me-1">C++</span>
+                            <span class="badge bg-primary me-1">C</span>
+                        </p>
+                        <h3>Comfortable:</h3>
+                        <p>
+                            <span class="badge bg-success me-1">Python</span>
+                            <span class="badge bg-success me-1">C++</span>
+                            <span class="badge bg-success me-1">JavaScript</span>
+                            <span class="badge bg-success me-1">MySQL</span>
+                        </p>
+                        <h3>Familiar:</h3>
+                        <p>
+                            <span class="badge bg-warning text-dark me-1">OOP</span>
+                            <span class="badge bg-warning text-dark me-1">Laravel</span>
+                            <span class="badge bg-warning text-dark me-1">Django</span>
+                        </p>
+                        <h3>Tools:</h3>
+                        <p>
+                            <span class="badge bg-dark me-1">Git</span>
+                            <span class="badge bg-dark me-1">GitHub</span>
+                            <span class="badge bg-dark me-1">VS Code</span>
+                            <span class="badge bg-dark me-1">Figma</span>
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h2 class="text-info">My Education</h2><br>
+                        <div class="bg-white p-4 shadow rounded">
+                            <h5 class="fw-bold">B.Sc in <br> Computer Science & Engineering</h5>
+                            <p class="mb-0">City University, Dhaka</p>
+                            <p>2023-2027</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- form -->
+    <section class="contact container my-5">
+        <div class="contact-us border border-2 shadow mx-auto p-4" style="max-width: 600px; width: 100%;">
+            <h1 class="text-center mb-4">Contact With Me</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control form-control-sm" id="name" placeholder="Enter your name">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control form-control-sm" id="email" placeholder="Enter your email">
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control form-control-sm" id="message" rows="4"
+                        placeholder="Write your message here..."></textarea>
+                </div>
+
+                <div class="d-grid mb-3">
+                    <button type="submit" class="btn btn-info btn-sm">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <hr>
+    <div class="card-body text-center bg-black text-white py-4 shadow">
+        <p class="card-title">Copyright <i class="fa-solid fa-copyright"></i> 2021 | Faiza Noushin Priya</p>
+        <p class="card-text">Chiyoda-ku, Tokyo 100-0005, Japan</p>
+        <div>
+            <i class="fa-brands fa-github me-3"></i>
+            <i class="fa-brands fa-linkedin me-3"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let resumeDownloaded = false;
+
+        document.getElementById("resumeBtn").addEventListener("click", function () {
+            const downloadLink = document.getElementById("downloadLink");
+
+            if (!resumeDownloaded) {
+                // First time: Download
+                downloadLink.click();
+                resumeDownloaded = true;
+            } else {
+                // Later: Open in a new tab
+                window.open(downloadLink.href, '_blank');
+            }
+        });
+    </script>
+</body>
+
+</html>
